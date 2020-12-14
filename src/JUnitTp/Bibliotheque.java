@@ -15,7 +15,9 @@ public class Bibliotheque {
         //remplissage
 
         addBook(new Book(1,"t","a"));
+        addBook(new Book(3,"t","a"));
         addBook(new Book());
+        addBook(null);
         addBook(new Book(2,"tf","af"));
     }
 
@@ -34,7 +36,8 @@ public class Bibliotheque {
     public static void  main(String ...args){
         Bibliotheque bb=new Bibliotheque(3);
         bb.addBook(new Book(1,"bok","55"));
-        bb.affiche();
+        System.out.println(bb.getBook(1));
+        //bb.affiche();
     }
 
 }
